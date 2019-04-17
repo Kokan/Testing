@@ -1,15 +1,13 @@
-#include <syslog-node1.h>
-#include <config.h>
-#include <syslog-ng/apphook.h>
+#include "syslog-node1.h"
+#include <apphook.h>
 //#include "syslog-ng-3.6.2/lib/apphook.h"
-#include <syslog-ng/tags.h>
-#include <syslog-ng/logmsg.h>
-#include <syslog-ng/messages.h>
-#include <syslog-ng/filter/filter-expr.h>
+#include <logmsg/tags.h>
+#include <logmsg/logmsg.h>
+#include <messages.h>
+#include <filter/filter-expr.h>
 #include <modules/dbparser/patterndb.h>
-#include <syslog-ng/plugin.h>
-#include <syslog-ng/cfg.h>
-#include <modules/dbparser/patterndb-int.h>
+#include <plugin.h>
+#include <cfg.h>
 
 #undef new
 #undef template
