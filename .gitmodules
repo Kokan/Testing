@@ -1,0 +1,4 @@
+[submodule "syslog-ng"]
+	path = syslog-ng
+	url = git@github.com:balabit/syslog-ng.git
+	branch = master
