@@ -1,14 +1,7 @@
 package main
 
-//#cgo CFLAGS: -I/tmp/install/syslog-ng-3.6.2/
-//#cgo CFLAGS: -I/usr/local/include/syslog-ng/
-//#cgo CFLAGS: -I/usr/local/include/syslog-ng/compat/
-//#cgo CFLAGS: -I/tmp/install/syslog-ng-3.6.2/lib/compat/
-//#cgo CFLAGS: -I/tmp/install/syslog-ng-3.6.2/lib/ivykis/
-//#cgo CFLAGS: -I/usr/local/include/syslog-ng/ivykis/
-//#cgo CFLAGS: -I/usr/local/include/eventlog/
-//#cgo CFLAGS: -I/usr/include/glib-2.0/
-//#cgo CFLAGS: -I/tmp/install/syslog-ng-3.6.2/modules/
+//#cgo CFLAGS: -I./syslog-ng/install/include
+//#cgo LDFLAGS: syslog-node.so
 // #include "syslog-node1.h"
 import "C"
 import (
