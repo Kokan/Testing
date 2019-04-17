@@ -38,7 +38,7 @@ func process(p string, m string){
 	defer C.free(unsafe.Pointer(app))
 	msg := C.CString(m1)
 	defer C.free(unsafe.Pointer(msg))
-	C.match(msg, C.int(len(msg)), app, C.int(len(app)))
+	C.match(msg, C.size_t(len(p1)), app, C.size_t(len(m1)))
 
 }
 
